@@ -1,4 +1,4 @@
-# AMBCT – Automatic Manual Backup Creation Tool (Linux)
+# AMBCT – Automatic Manual Backup Creation Tool for Linux
 
 - **Author:** BlitzPythoner
 - **Version:** v1.0
