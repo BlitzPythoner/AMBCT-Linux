@@ -45,11 +45,4 @@ body:
     attributes:
       label: Log Output
       description: Paste the last visible console output or error message.
-      placeholder: "Traceback (most recent call last):
-  File "/usr/bin/ambct", line 8, in <module>
-    main()
-  File "/usr/lib/python3/dist-packages/ambct/main.py", line 42, in main
-    create_backup(wimlib_path, backup_path, target_path, compression, backup_name, CHECK, SHUTDOWN)
-  File "/usr/lib/python3/dist-packages/ambct/core.py", line 28, in create_backup
-    process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-FileNotFoundError: [Errno 2] No such file or directory: 'wimlib-imagex'"
+      placeholder: "Traceback (most recent call last): <output>"
