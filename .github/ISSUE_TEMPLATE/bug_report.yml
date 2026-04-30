@@ -1,0 +1,55 @@
+name: Bug Report
+description: Report a problem, error, or crash in AMBCT
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clearly describe what went wrong and what you expected to happen.
+      placeholder: "The backup process stops at 60% without any error message."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide exact steps so others can reproduce the issue.
+      placeholder: |
+        1. Start AMBCT
+        2. Select drive 
+        3. Choose target
+        4. Observe crash, freeze or error
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: AMBCT Version
+      placeholder: "v1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      placeholder: "Zorin OS Core 18"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log Output
+      description: Paste the last visible console output or error message.
+      placeholder: "Traceback (most recent call last):
+  File "/usr/bin/ambct", line 8, in <module>
+    main()
+  File "/usr/lib/python3/dist-packages/ambct/main.py", line 42, in main
+    create_backup(wimlib_path, backup_path, target_path, compression, backup_name, CHECK, SHUTDOWN)
+  File "/usr/lib/python3/dist-packages/ambct/core.py", line 28, in create_backup
+    process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+FileNotFoundError: [Errno 2] No such file or directory: 'wimlib-imagex'"
